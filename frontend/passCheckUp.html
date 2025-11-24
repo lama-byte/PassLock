@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-    <div class="logo"> <img src="logo.png" alt="pass Logo">
-    </div>
+    <figure id="logo">
+        <img src="logo.png" alt=" passLogo">
+    </figure>
 
     <form class="search">
       <input type="text" placeholder="Search...">
@@ -22,8 +23,8 @@
   </header>
 
   <!-- الصفحة-->
- 
-<div class="container">
+ <main>
+<aside>
 
   <nav>
     <ul>
@@ -32,38 +33,37 @@
       <li class="active">Password Checkup</li>
     </ul>
   </nav>
-
-  <div class="divider"></div>
-
-  <div class="content">
+</aside> 
+ <hr class="vertical line">
+<section>
     <h2>Password Checkup</h2>
 
-    <div class="check-list">
-      <div class="check-item">
-        <span class="good">Strong Passwords</span>
-        <span>0</span>
-      </div>
+    <ul class="check-list">
+      <li class="check-item">
+        <p class="good">Strong Passwords</p>
+        <p>0</p>
+      </li>
 
-      <div class="check-item">
-        <span class="bad">Weak Passwords</span>
-        <span>0</span>
-      </div>
+      <li class="check-item">
+        <p class="bad">Weak Passwords</p>
+        <p>0</p>
+      </li>
 
-      <div class="check-item">
-        <span class="medium">Reorder Passwords</span>
-        <span>0</span>
-      </div>
+      <li class="check-item">
+        <p class="medium">Reorder Passwords</p>
+        <p>0</p>
+      </li>
 
-      <div class="check-item">
-        <span class="bad">Compromised Passwords</span>
-        <span>0</span>
-      </div>
-    </div>
-  </div>
-
-</div>
+      <li class="check-item">
+        <p class="bad">Compromised Passwords</p>
+        <p>0</p>
+      </li>
+    </ul>
+  
+</section>
+</main>
   <footer>
     <p>© 2025 Passwords Lock</p>
   </footer>
 </body>
-</html>
+</html> 
