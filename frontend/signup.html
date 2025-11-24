@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-    <div class="logo"> <img src="logo.png" alt="pass Logo">
-    </div>
+     <figure id="logo">
+        <img src="logo.png" alt=" passLogo">
+    </figure>
     <nav>
         <ul>
         <a href="index.html">Home</a> <!--- رابط الصفحة-->
@@ -18,35 +19,35 @@
   </header>
  <!-- الصفحة-->
  <h2 id="Creat"> Creat New account! </h2>
-  <div id="form">
+  <main id="form">
     <form methode=" post"  action="" >    <!-- يحتاج لربطه ب php-->
-    <div class="row">       
-<div class="f" >
+    <fieldset class="row">       
+<fieldset class="f" >
   <label> First name </label> 
   <input type="text" placeholder=" First name" required>
-</div>
-<div class="f" >
+</fieldset>
+<fieldset class="f" >
 <label> Last name</label> 
 <input type="text" placeholder="Last name" required>
-</div>
-</div>
- <div id="Email"> 
+</fieldset>
+</fieldset>
+ <fieldset id="Email"> 
  <label> Email address</label> <br>
  <input type="email" placeholder="examble@ex.com" required>
- </div>
-<div class="row"> 
-<div class="f">
+ </fieldset>
+<fieldset class="row"> 
+<fieldset class="f">
  <label> Password</label>   
  <input type="password" placeholder="Enter your password" required>
-</div>
-<div class= "f">
+</fieldset>
+<fieldset class= "f">
  <label>Confirm Password</label>   
  <input type="password" placeholder="Enter your password again" required>
-</div>
-</div>
+</fieldset>
+</fieldset>
 <button type="submit" > Sign up</button>
     </form>
-</div>
+</main>
 
 
   <footer>
