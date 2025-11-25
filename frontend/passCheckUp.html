@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passwors Lock</title>
-     <link rel="stylesheet" href="stylepage6.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passwors Lock</title>
+  <link rel="stylesheet" href="stylepage6.css">
 </head>
+
 <body>
-    <header>
+  <header>
     <figure id="logo">
-        <img src="/resources/logo.jpeg" alt=" passLogo">
+      <img src="resources/logo.jpeg" alt=" passLogo">
     </figure>
 
     <form class="search">
@@ -17,53 +19,52 @@
     </form>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li> <!--- رابط الصفحة-->
+        <li><a href="index.html">Sign out</a></li> <!--- رابط الصفحة-->
       </ul>
-      </nav>
+    </nav>
   </header>
 
+  <aside>
+    <nav>
+      <a href="dashboard.html">Your Passwords</a>
+      <a href="addPass.html">Add Password</a>
+      <a href="passCheckUp.html" class="active">Password Checkup</a>
+    </nav>
+  </aside>
+
   <!-- الصفحة-->
- <main>
-<aside>
+  <main>
+    <hr class="vertical line">
+    <section>
+      <h2>Password Checkup</h2>
 
-  <nav>
-    <ul>
-      <li> your Passwords</li>
-      <li>Add Password</li>
-      <li class="active">Password Checkup</li>
-    </ul>
-  </nav>
-</aside> 
- <hr class="vertical line">
-<section>
-    <h2>Password Checkup</h2>
+      <ul class="check-list">
+        <li class="check-item">
+          <p class="good">Strong Passwords</p>
+          <p>0</p>
+        </li>
 
-    <ul class="check-list">
-      <li class="check-item">
-        <p class="good">Strong Passwords</p>
-        <p>0</p>
-      </li>
+        <li class="check-item">
+          <p class="bad">Weak Passwords</p>
+          <p>0</p>
+        </li>
 
-      <li class="check-item">
-        <p class="bad">Weak Passwords</p>
-        <p>0</p>
-      </li>
+        <li class="check-item">
+          <p class="medium">Reorder Passwords</p>
+          <p>0</p>
+        </li>
 
-      <li class="check-item">
-        <p class="medium">Reorder Passwords</p>
-        <p>0</p>
-      </li>
+        <li class="check-item">
+          <p class="bad">Compromised Passwords</p>
+          <p>0</p>
+        </li>
+      </ul>
 
-      <li class="check-item">
-        <p class="bad">Compromised Passwords</p>
-        <p>0</p>
-      </li>
-    </ul>
-  
-</section>
-</main>
+    </section>
+  </main>
   <footer>
     <p>© 2025 Passwords Lock</p>
   </footer>
 </body>
-</html> 
+
+</html>
