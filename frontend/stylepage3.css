@@ -1,69 +1,83 @@
-body, ul {
+body,
+ul {
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
-ul { list-style: none; }
+
+ul {
+  list-style: none;
+}
+
 header {
   position: relative;
   display: flex;
   height: 150px;
-  align-items: center;   
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: space-between;
   padding: 25px 15px;
   box-sizing: border-box;
-    overflow: hidden;
+  overflow: hidden;
   margin: 0;
 }
- .video {
-position:absolute   ;
+
+.video {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100%;
-  object-fit:initial;
-   
+  object-fit: cover;
   z-index: -1;
- }
-#Creat{
- width: 300px;      
-  margin: 100px auto;
-  color: #431ee9; 
-  text-align: center; 
-   
 }
-#form{
-width: 300px;      
+
+#Creat {
+  width: 300px;
+  margin: 100px auto;
+  color: #431ee9;
+  text-align: center;
+
+}
+
+#form {
+  width: 300px;
   margin: 50px auto;
   margin-top: 0px;
   display: flex;
-  padding: 3px; 
-  flex-direction: column; 
-  gap: 15px;  
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3px;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 fieldset {
-  border: none; /*ازالة الحدود */
+  border: none;
+  /*ازالة الحدود */
   padding: 0;
   margin: 0;
 }
-.row{
-  display: flex; 
-  gap: 20px;  
+
+.row {
+  display: flex;
+  gap: 20px;
 }
-.f{
-display: flex;  
- flex-direction: column;
- flex: 1; 
+
+.f {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
+
 .field input {
   padding: 8px 12px;
-  width: 100%; 
+  width: 100%;
 }
-#Email input{
-padding:5px ;
-height: 15px;
+
+#Email input {
+  padding: 5px;
+  height: 15px;
 }
-footer{
+
+footer {
 
   position: relative;
   display: flex;
@@ -72,7 +86,7 @@ footer{
   margin-top: auto;
   text-align: left;
   overflow: hidden;
-  height: 70px; 
+  height: 70px;
 }
 
 footer .video {
@@ -82,8 +96,6 @@ footer .video {
   width: 100vw;
   height: 100%;
   object-fit: cover;
-  
+
   z-index: -1;
 }
-
-
