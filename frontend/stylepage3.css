@@ -4,26 +4,13 @@ body, ul {
 }
 ul { list-style: none; }
 header {
-  position: relative;
   display: flex;
-  height: 150px;
   align-items: center;   
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 25px 15px;
-  box-sizing: border-box;
-    overflow: hidden;
-  margin: 0;
+  background-image:url("resources/passs.jpg");
+ background-size:9cm;
 }
- .video {
-position:absolute   ;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit:initial;
-   
-  z-index: -1;
- }
 #Creat{
  width: 300px;      
   margin: 100px auto;
@@ -42,12 +29,12 @@ width: 300px;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 fieldset {
-  border: none; /*ازالة الحدود */
+  border: none; 
   padding: 0;
   margin: 0;
 }
 .row{
-  display: flex; 
+  display: flex;  
   gap: 20px;  
 }
 .f{
@@ -59,31 +46,26 @@ display: flex;
   padding: 8px 12px;
   width: 100%; 
 }
+
 #Email input{
 padding:5px ;
 height: 15px;
 }
 footer{
-
-  position: relative;
-  display: flex;
+background-image:url("resources/passs.jpg");
+  background-size:9cm;
   color: white;
-  padding: 15px;
-  margin-top: auto;
-  text-align: left;
-  overflow: hidden;
-  height: 70px; 
+  padding: 25px 15px;
+  margin-top: auto; 
 }
 
-footer .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  
-  z-index: -1;
+button{
+    background-color: #431ee9;
+    color: #ccc;
 }
-
-
+a:visited{
+    color:#431ee9
+}
+a:hover{
+color: rgb(78, 191, 191);
+}
