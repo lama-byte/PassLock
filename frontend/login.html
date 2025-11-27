@@ -11,7 +11,7 @@
 <body>
   <header>
     <figure id="logo">
-      <img src="resources/logo.jpeg" alt=" passLockLogo" width="120">
+      <img src="resources/logoo.png" alt=" passLockLogo" width="120">
     </figure>
     <nav>
       <ul>
@@ -23,13 +23,13 @@
   <h2 id="welcome"> Welcome Back! </h2>
   <main id="form">
 
-    <form method="post" action=""> <!--  ارسال البيانات على  post-->
+    <form id="loginForm" method="post" action=""> <!--  ارسال البيانات على  post-->
       <label> Username/ email</label> <br>
-      <input type="email" placeholder="Enter your username or email" required> <br>
+      <input id="email" type="email" placeholder="Enter your username or email" required> <br>
       <label> Password</label> <br>
-      <input type="password" placeholder="Enter your password" required> <br>
-      <button type="submit"> Login</button>
-
+      <input id="password" type="password" placeholder="Enter your password" required> 
+      <button id="show/hide" type="button">show password</button><br>
+      <button id="loginBtn" type="submit">Login</button>
     </form>
     <p>Don't have an account? <a href="signup.html">Sign up</a></p> <!-- صفحة signup-->
 
@@ -40,6 +40,49 @@
   <footer>
     <p>© 2025 Passwords Lock </p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (){
+      //
+      let email = document.getElementById("email");
+      let pass = document.getElementById("password");
+      let loginBtn = document.getElementById("loginBtn");
+
+      document.getElementById("loginForm").addEventListener ("submit", function (e){
+        //email format validation 
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email.value)){
+          alert("please enter a valid email address");
+          e.preventDefault();
+        }
+        //check password length
+        if (pass.value.length < 8){
+          pass.focus;
+          alert("password should be at least 8 characters!");
+          e.preventDefault();
+        }
+        
+        //after doing php should check if it's working 
+        // loginBtn.textContent = "Logging in..";
+        // loginBtn.disabled = true;
+
+      });
+
+      //show/hide passwords
+        let visibilityBtn = document.getElementById("show/hide");
+        visibilityBtn.addEventListener("click", function (){
+          if (pass.type == "password"){
+            pass.type = "text";
+            visibilityBtn.textContent = "hide password";
+          }
+          else {
+            pass.type = "password";
+            visibilityBtn.textContent = "show password";
+          }
+        });
+    });
+
+  </script>
 </body>
 
 </html>
