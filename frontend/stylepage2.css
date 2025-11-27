@@ -46,6 +46,10 @@ background-image:url("resources/passs.jpg");
   padding: 25px 15px;
   margin-top: auto; 
 }
+button{
+    background-color: #431ee9;
+    color: #ccc;
+}
 
 
 
