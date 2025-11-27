@@ -6,29 +6,14 @@ body, ul {
 }
 ul { list-style: none; }
 header {
-  
-  position: relative;
   display: flex;
-  height: 150px;
   align-items: center;   
-  justify-content: space-between; 
-  
+  justify-content: space-between;
   padding: 25px 15px;
-  box-sizing: border-box;
-    overflow: hidden;
-  margin: 0;
+  background-image:url("resources/passs.jpg");
+ background-size:9cm;
 }
- .video {
-position:absolute   ;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit:initial;
    
-  z-index: -1;
- }
-  
 #welcome{
  width: 300px;      
   margin: 100px auto;
@@ -47,30 +32,20 @@ form input{
     
     height: 20px;
 }
+a:visited{
+    color:#431ee9
+}
+a:hover{
+color: rgb(78, 191, 191);
+}
+
 footer{
-
-  position: relative;
-  display: flex;
+background-image:url("resources/passs.jpg");
+  background-size:9cm;
   color: white;
-  padding: 15px;
-  margin-top: auto;
-  text-align: left;
-  overflow: hidden;
-  height: 70px; 
+  padding: 25px 15px;
+  margin-top: auto; 
 }
-
-footer .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  object-fit: cover;
-  
-  z-index: -1;
-}
-
-
 
 
 
