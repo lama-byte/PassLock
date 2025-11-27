@@ -15,42 +15,51 @@
     </figure>
     <nav>
       <ul>
-        <a href="index.html">Home</a> <!--- رابط الصفحة-->
+        <a href="index.html">Logout</a> <!--- رابط الصفحة-->
       </ul>
     </nav>
     <video class="video" autoplay muted loop>
-    <source src="resources/animation.mp4" type="video/mp4">
-  </video>
+      <source src="resources/animation.mp4" type="video/mp4">
+    </video>
   </header>
   <!-- الصفحة-->
-  <h2 id="Creat"> Creat New account! </h2>
+  <h2 id="Creat">Creat New account!</h2>
   <main id="form">
-    <form methode=" post" action=""> <!-- يحتاج لربطه ب php-->
+    <form id="signUpForm" methode=" post" action=""><!-- يحتاج لربطه ب php-->
       <fieldset class="row">
+
         <fieldset class="f">
-          <label> First name </label>
-          <input type="text" placeholder=" First name" required>
+          <label>First name </label>
+          <input id="fname" type="text" placeholder=" First name" required>
         </fieldset>
+
         <fieldset class="f">
-          <label> Last name</label>
-          <input type="text" placeholder="Last name" required>
+          <label>Last name</label>
+          <input id="lname" type="text" placeholder="Last name" required>
         </fieldset>
+
       </fieldset>
       <fieldset id="Email">
-        <label> Email address</label> <br>
-        <input type="email" placeholder="examble@ex.com" required>
+        <label>Email Address</label><br>
+        <input id="email" type="email" placeholder="example@ex.com" required>
       </fieldset>
+
       <fieldset class="row">
         <fieldset class="f">
-          <label> Password</label>
-          <input type="password" placeholder="Enter your password" required>
+          <label>Password</label>
+          <input id="password1" type="password" placeholder="Enter your password" required>
+          <p id="liveFeedback"> </p>
         </fieldset>
+
         <fieldset class="f">
           <label>Confirm Password</label>
-          <input type="password" placeholder="Enter your password again" required>
+          <input id="password2" type="password" placeholder="Enter your password again" required>
         </fieldset>
       </fieldset>
-      <button type="submit"> Sign up</button>
+      
+      <button id="show/hide" type="button">show password</button><br>
+      <button id="signupBtn" type="submit">Sign up</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
     </form>
   </main>
 
@@ -58,9 +67,75 @@
   <footer>
     <p>© 2025 PassLock</p>
     <video class="video" autoplay muted loop>
-    <source src="resources/animation.mp4" type="video/mp4"> <!--background of footer-->
-  </video>
+      <source src="resources/animation.mp4" type="video/mp4"> <!--background of footer-->
+    </video>
   </footer>
+
+  <script>
+    let fname = document.getElementById("fname");
+    let lname = document.getElementById("lname");
+    let email = document.getElementById("email");
+    let pass1 = document.getElementById("password1");
+    let pass2 = document.getElementById("password2");
+    let passFeedback = document.getElementById("liveFeedback");
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    document.getElementById("signUpForm").addEventListener("submit", function (e) {
+      //validate names (should be without spaces)
+      if (!/^[A-Za-z]+$/.test(fname.value) || !/^[A-Za-z]+$/.test(lname.value)) {
+        alert("names cannot contain spaces, numbers or symbols!");
+        e.preventDefault();
+      }
+      //validate email 
+      else if (!emailPattern.test(email.value)) {
+        alert("please enter a valid email address");
+        e.preventDefault();
+      }
+      else if (pass1.value != pass2.value) {
+        alert("Passwords do NOT match!");
+        e.preventDefault();
+      }
+      else {
+        //after doing php should check if it's working 
+        signUpBtn.textContent = "Signing Up..";
+        signUpBtn.disabled = true;
+      }
+    });
+
+    //live password strength checkup
+    pass1.addEventListener("input", function (e) {
+      //weak
+      if (pass1.value.length < 8) {
+        passFeedback.textContent = "🔴 Weak Password";
+      }
+      //strong 
+      else if (/[A-Z]/.test(pass1.value) &&
+        /[a-z]/.test(pass1.value) &&
+        /[0-9]/.test(pass1.value) &&
+        /[^A-Za-z0-9]/.test(pass1.value)) {
+        passFeedback.textContent = "🟢 Strong Password";
+      }
+      //medium
+      else {
+        passFeedback.textContent = "🟡 Medium Password";
+      }
+    });
+
+    //show/hide passwords
+    let visibilityBtn = document.getElementById("show/hide");
+    visibilityBtn.addEventListener("click", function () {
+      if (pass1.type == "password" && pass2.type == "password") {
+        pass1.type = "text";
+        pass2.type = "text";
+        visibilityBtn.textContent = "hide password";
+      }
+      else {
+        pass1.type = "password";
+        pass2.type = "password";
+        visibilityBtn.textContent = "show password";
+      }
+    });
+  </script>
 </body>
 
 </html>

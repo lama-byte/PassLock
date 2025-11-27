@@ -27,9 +27,9 @@
   <main id="form">
 
     <form id="loginForm" method="post" action=""> <!--  ارسال البيانات على  post-->
-      <label> Username/ email</label> <br>
-      <input id="email" type="email" placeholder="Enter your username or email" required> <br>
-      <label> Password</label> <br>
+      <label>Email Address</label><br>
+      <input id="email" type="email" placeholder="Enter your email" required><br>
+      <label> Password</label><br>
       <input id="password" type="password" placeholder="Enter your password" required> 
       <button id="show/hide" type="button">show password</button><br>
       <button id="loginBtn" type="submit">Login</button>
@@ -61,30 +61,19 @@
           e.preventDefault();
         }
         //check password length
-        if (pass.value.length < 8){
+        else if (pass.value.length < 8){
           pass.focus;
           alert("password should be at least 8 characters!");
           e.preventDefault();
         }
-        
+        else {
         //after doing php should check if it's working 
-        // loginBtn.textContent = "Logging in..";
-        // loginBtn.disabled = true;
+        loginBtn.textContent = "Logging in..";
+        loginBtn.disabled = true;
+        }
 
       });
 
-      //show/hide passwords
-        let visibilityBtn = document.getElementById("show/hide");
-        visibilityBtn.addEventListener("click", function (){
-          if (pass.type == "password"){
-            pass.type = "text";
-            visibilityBtn.textContent = "hide password";
-          }
-          else {
-            pass.type = "password";
-            visibilityBtn.textContent = "show password";
-          }
-        });
     });
 
   </script>
