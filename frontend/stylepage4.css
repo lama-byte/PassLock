@@ -1,1 +1,120 @@
+body, ul {
+  margin: 0;
+  padding: 0; 
+}
+ul { list-style: none; }
+header {
+    color:#f3f3f3;
+  display: flex;
+  align-items: center;   
+  justify-content: space-between; 
+  padding: 25px 15px;
+  background-image:url("resources/passs.jpg");
+ background-size:9cm;
+   overflow: hidden;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+}  /* for hr line*/
+
+table  th{
+     border-collapse: separate; 
+} table{
+    
+border: 1px solid black;
+    width: 70%;
+     margin-bottom: 10px;
+}
+.sname{
+    text-align: left;
+    border: 1px solid rgb(103, 108, 103);
+     
+}
+.sname:hover{
+    background-color: #b8d4f5;
+}
+#frow:first-child{
+    text-align: left;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main{
+ display: flex;
+  flex: 1; 
+  flex-direction: row;  
+  margin-top:-19px;
+}
+aside {
+  width: 200px;
+  background:#f3f3f3;
+  padding:20px 20px 20px  ;
+  margin-top: 0;
+ 
+}
+aside nav ul li a{
+  display: block;
+    padding:10px 0;
+  font-size:16px;
+  cursor:pointer;
+
+}
+hr.verticalline {
+  width:3px;
+  border: none;
+  margin: 0;
+  height: 100%;
+  align-self: stretch;
+  background:#ccc;
+}
+aside ul li a.active {
+  color: #401ee9;
+  font-weight: bold;
+  border-right: 3px solid #2e2ee8;
+  padding-right: 10px;
+}
+section {
+  flex:1;
+  padding:20px;
+  margin-left: 20px;
+}
+footer{
+background-image:url("resources/passs.jpg");
+  background-size:9cm;
+  color: white;
+  padding: 25px 15px;
+  margin-top: auto; 
+}
+a:visited{
+    color:#431ee9
+}
+
+a:hover{
+     color: rgb(78, 191, 191);
+}
+.caption{
+    display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.caption img{
+    width: 50px;
+  height: 50px;
+  border-radius: 6px;
+}
+.caption figcaption{
+  
+  text-align: right; 
+}
+button{
+    background-color: #431ee9;
+    color: #ccc;
+}
 
