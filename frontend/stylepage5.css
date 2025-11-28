@@ -1,1 +1,132 @@
+ body, ul {
+  margin: 0;
+  padding: 0; 
+}
+ul { list-style: none; }
+header {
+  display: flex;
+  align-items: center;   
+  justify-content: space-between;
+  padding: 25px 15px;
+  color: #ddd;
+  background-image:url("resources/passs.jpg");
+ background-size:9cm;
+}
+
+body {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+ 
+ display: flex;
+   flex: 1;     
+}
+aside {
+  width: 200px;
+  background:#f3f3f3;
+  padding:20px;
+  
+}
+aside nav ul li a{
+  display: block;
+    padding:10px 0;
+  font-size:16px;
+  cursor:pointer;
+
+}
+aside ul li a.active {
+  color: #401ee9;
+  font-weight: bold;
+  border-right: 3px solid #2e2ee8;
+  padding-right: 10px;
+}
+hr.verticalline {
+  width: 2px;
+  background: #ccc;
+  border: none;
+  margin: 0;
+  height: 100%;
+  align-self: stretch;
+}
+
+footer{
+background-image:url("resources/passs.jpg");
+  background-size:9cm;
+  color: white;
+  padding: 25px 15px;
+  margin-top: auto; 
+}
+#greeting{
+  text-align: center;
+margin-left: 50px;
+color: #401ee9;
+}
+#greeting p{
+    color:#3020989b;
+}
+
+ #form{
+  width: 80px;
+  flex: 1;
+  display:flex;
+  padding: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 500px;
+}
+form{
+   margin-top:15px;
+  width: 80%; 
+}
+fieldset {
+  border: 1px solid #eee;
+  padding: 20px;
+  
+  border-radius: 8px;
+}
+legend {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 10px;
+  
+  color: #391ee9;
+}
+
+label {
+    display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#form input {
+display: block;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 9px 18px;
+  background-color: #391ee9;
+  
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+a:visited{
+    color:#431ee9
+}
+a:hover{
+color: rgb(78, 191, 191);
+}
 

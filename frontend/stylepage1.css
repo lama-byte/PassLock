@@ -1,1 +1,92 @@
+body, ul {
+  margin: 0;
+  padding: 0; 
+}
+ul { list-style: none; }
+header {
+    color:#f3f3f3;
+  display: flex;
+  align-items: center;   
+  justify-content: space-between; 
+  padding: 25px 15px;
+  background-image:url("resources/passs.jpg");
+ background-size:9cm;
+   overflow: hidden;
+}
+a:visited{
+    color:#431ee9
+}
+a:hover{
+     color: rgb(78, 191, 191);
+}
 
+main {
+ position: relative;        
+ margin: 0 auto;  
+ 
+}
+main h1{
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 400px;
+    
+    line-height: 1.4; 
+    margin: 0 0 10px 0; 
+    color:#431ee9;
+}
+main figure{
+    margin-top:  8px;
+    border-radius: 43px;
+    object-fit: cover;
+    margin-left: 30px;   
+} 
+section {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(13, 25, 186, 0.607);
+           border: 1px solid #e0e0e0;
+            border-radius: 10px;
+        }
+        section p {
+            color: #111a62;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+ #About h3{
+ color: #431ee9;
+}
+#About{
+    text-align: left;
+}
+#About ul{
+    font-style: italic;
+}
+footer{
+background-image:url("resources/passs.jpg");
+  background-size:9cm;
+  color: white;
+  padding: 25px 15px;
+ margin-top: auto;
+
+}
+footer h3{
+position: relative;
+ color: white;
+  z-index: 1;
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(103, 68, 218, 0.7);
+}
+footer p{
+ position: relative;
+  z-index: 1;
+  color: white;
+  margin: 0;
+  font-size: 14px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);  
+}
+html {
+      scroll-behavior: smooth;
+    }

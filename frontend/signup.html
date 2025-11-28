@@ -11,64 +11,50 @@
 <body>
   <header>
     <figure id="logo">
-      <img src="resources/logoo.png" alt=" passLockLogo" width="120">
+      <img src="resources/logoo.png" alt=" passLockLogo" width="140" height="150">
     </figure>
     <nav>
       <ul>
-        <a href="index.html">Logout</a> <!--- رابط الصفحة-->
+        <a href="index.html">Home</a> <!--- رابط الصفحة-->
       </ul>
     </nav>
-    <video class="video" autoplay muted loop>
-      <source src="resources/animation.mp4" type="video/mp4">
-    </video>
+   
   </header>
   <!-- الصفحة-->
-  <h2 id="Creat">Creat New account!</h2>
+  <h2 id="Creat"> Creat New account! </h2>
   <main id="form">
-    <form id="signUpForm" methode=" post" action=""><!-- يحتاج لربطه ب php-->
+    <form methode=" post" action=""> <!-- يحتاج لربطه ب php-->
       <fieldset class="row">
-
         <fieldset class="f">
-          <label>First name </label>
-          <input id="fname" type="text" placeholder=" First name" required>
+          <label> First name </label>
+          <input type="text" placeholder=" First name" required>
         </fieldset>
-
         <fieldset class="f">
-          <label>Last name</label>
-          <input id="lname" type="text" placeholder="Last name" required>
+          <label> Last name</label>
+          <input type="text" placeholder="Last name" required>
         </fieldset>
-
       </fieldset>
       <fieldset id="Email">
-        <label>Email Address</label><br>
-        <input id="email" type="email" placeholder="example@ex.com" required>
+        <label> Email address</label> <br>
+        <input type="email" placeholder="examble@ex.com" required>
       </fieldset>
-
       <fieldset class="row">
         <fieldset class="f">
-          <label>Password</label>
-          <input id="password1" type="password" placeholder="Enter your password" required>
-          <p id="liveFeedback"> </p>
+          <label> Password</label>
+          <input type="password" placeholder="Enter your password" required>
         </fieldset>
-
         <fieldset class="f">
           <label>Confirm Password</label>
-          <input id="password2" type="password" placeholder="Enter your password again" required>
+          <input type="password" placeholder="Enter your password again" required>
         </fieldset>
       </fieldset>
-      
-      <button id="show/hide" type="button">show password</button><br>
-      <button id="signupBtn" type="submit">Sign up</button>
-      <p>Already have an account? <a href="login.html">Login</a></p>
+      <button type="submit"> Sign up</button>
     </form>
   </main>
 
 
   <footer>
-    <p>© 2025 PassLock</p>
-    <video class="video" autoplay muted loop>
-      <source src="resources/animation.mp4" type="video/mp4"> <!--background of footer-->
-    </video>
+    <p>© 2025 Passwords Lock</p>
   </footer>
 
   <script>
